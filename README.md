@@ -13,7 +13,9 @@ npm i curlysort
 
 ## example use case
 ```
-arr = [
+var curlysort = require('curlysort');
+
+var arr = [
 {
   x:201
 },
@@ -28,6 +30,6 @@ arr = [
 }
 ]
 
-curlysort(arr,'x')
+console.log(curlysort(arr,'x'))
 ```
 Returns : [ { x: null }, { x: 150 }, { x: 170 }, { x: 201 } ]
