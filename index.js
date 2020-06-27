@@ -1,4 +1,4 @@
-// function to sort an array of objects based on a specific take
+// function to sort an array of objects based on a specific key of object
 
 // first parameter is an array of objects
 // second parameter is the key, if the key is not present in any element that the function will add that
