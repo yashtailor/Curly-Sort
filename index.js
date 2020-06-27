@@ -8,7 +8,6 @@ function curlysort(arr,key){
     let isValidArray = true;
     // case 1: if the array of objects doesn't have all the elements as objects
     for(let i=0;i<arr.length;i++){
-        console.log(typeof([1,2,3]))
         // weird behaviour with js where is show array type as object that's
         // why a separte helper for checking array
         if(Array.isArray(arr[i])){
@@ -19,7 +18,6 @@ function curlysort(arr,key){
             break;
         }
     }
-    console.log(arr)
     // if not valid then simply return
     if(!isValidArray)return arr;
     for(let i=0;i<arr.length;i++){
@@ -28,7 +26,6 @@ function curlysort(arr,key){
             arr[i][key] = null;
         }
     }
-    console.log(arr)
     // finally sorting the array on basis of key
     arr.sort((e1,e2)=>{
         if(e1[key] < e2[key])return -1;
